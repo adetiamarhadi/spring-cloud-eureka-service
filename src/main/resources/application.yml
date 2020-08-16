@@ -1,0 +1,12 @@
+my:
+  app:
+    instance: ${INSTANCE_NAME:app-service}
+spring:
+  application:
+    name: app-service
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+server:
+  port: ${SERVER_PORT:8080}
